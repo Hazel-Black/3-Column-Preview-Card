@@ -1,6 +1,6 @@
 /* todo I went ahead and did the mobile layout so you can do the deskotp and we can work on the middle section together */
 
-* {
+*,*::before,*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -65,5 +65,8 @@ color: hsl(179, 100%, 13%);
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-@media (min-width: 1000px) {
+@media (min-width: 700px) {
+  .card-container {
+    display: flex;
+  }
 }
