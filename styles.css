@@ -30,8 +30,7 @@ main {
   max-width: 26em;
 }
 .card-container img {
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-bottom: 2em;
 }
 .card-container h2 {
   padding-bottom: 20px;
