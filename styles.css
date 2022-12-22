@@ -1,8 +1,4 @@
-/* todo I went ahead and did the mobile layout so you can do the deskotp and we can work on the middle section together */
-
-*,
-*::before,
-*::after {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,9 +10,17 @@ body {
   color: hsla(0, 0%, 100%, 0.75);
   font-size: 15px;
   line-height: 1.5;
+  height: 100vh;
 }
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .card-container {
   padding: 30px;
+  max-width: 26em;
 }
 .card-container img {
   padding-bottom: 20px;
@@ -32,12 +36,15 @@ body {
   margin-top: 20px;
   padding: 15px 25px;
   border-radius: 40px;
-  border: none;
+  border: white 0.1em solid;
   font-size: 15px;
   font-family: Lexend Deca;
   background-color: hsl(0, 0%, 95%);
 }
-
+.card-container button:hover {
+  background-color: transparent;
+  color: white;
+}
 .sedan {
   background-color: hsl(31, 77%, 52%);
   padding: 2.5em 2.5em 2.5em 3em;
@@ -63,21 +70,22 @@ body {
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 1rem;
   text-align: center;
-  color: black;
-  position: fixed;
-  left: 43%;
-  bottom: 2%;
+  color: hsl(179, 100%, 13%);
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(184, 100%, 22%);
+  text-decoration: none;
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
+  main {
+    height: 100vh;
+  }
   .card-container {
     display: flex;
-    padding-block-start: 20%;
-    padding-inline: 20%;
+
+    max-width: 60em;
   }
   .card-container button {
     margin-block-start: 5em;
