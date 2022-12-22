@@ -3,11 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --sedan-color: hsl(31, 77%, 52%);
+  --suv-color: hsl(184, 100%, 22%);
+  --luxury-color: hsl(179, 100%, 13%);
+  --main-color: hsl(0, 0%, 95%);
+  --par-text-color: hsla(0, 0%, 100%, 0.75);
+}
 
 body {
-  background-color: hsl(0, 0%, 95%);
+  background-color: var(--main-color);
   font-family: Lexend Deca;
-  color: hsla(0, 0%, 100%, 0.75);
+  color: var(--par-text-color);
   font-size: 15px;
   line-height: 1.5;
   height: 100vh;
@@ -30,52 +37,52 @@ main {
   font-family: Big Shoulders Display;
   font-weight: 700;
   font-size: 42px;
-  color: hsl(0, 0%, 95%);
+  color: var(--main-color);
 }
 .card-container button {
   margin-top: 20px;
   padding: 15px 25px;
   border-radius: 40px;
-  border: white 0.1em solid;
+  border: var(--main-color) 0.1em solid;
   font-size: 15px;
   font-family: Lexend Deca;
-  background-color: hsl(0, 0%, 95%);
+  background-color: var(--main-color);
 }
 .card-container button:hover {
   background-color: transparent;
-  color: white;
+  color: var(--main-color);
 }
 .sedan {
-  background-color: hsl(31, 77%, 52%);
+  background-color: var(--sedan-color);
   padding: 2.5em 2.5em 2.5em 3em;
   border-radius: 10px 10px 0 0;
 }
 .sedan button {
-  color: hsl(31, 77%, 52%);
+  color: var(--sedan-color);
 }
 .suv {
-  background-color: hsl(184, 100%, 22%);
+  background-color: var(--suv-color);
   padding: 2.5em 2.5em 2.5em 3em;
 }
 .suv button {
-  color: hsl(184, 100%, 22%);
+  color: var(--suv-color);
 }
 .luxury {
-  background-color: hsl(179, 100%, 13%);
+  background-color: var(--luxury-color);
   padding: 2.5em 2.5em 2.5em 3em;
   border-radius: 0 0 10px 10px;
 }
 .luxury button {
-  color: hsl(179, 100%, 13%);
+  color: var(--luxury-color);
 }
 
 .attribution {
   font-size: 1rem;
   text-align: center;
-  color: hsl(179, 100%, 13%);
+  color: var(--luxury-color);
 }
 .attribution a {
-  color: hsl(184, 100%, 22%);
+  color: var(--suv-color);
   text-decoration: none;
 }
 @media (min-width: 900px) {
